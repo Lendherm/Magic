@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Poppins&display=swap');
+/* CSS */
+#content {
+    max-width:1600px;
+    margin:0 auto;
+}
+
+#background {
+    height:725px;
+    background-color: #4A4E69 ;
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+
+.book {
+    background-color:#F72585;
+    color:#000;
+    text-decoration:none;
+    text-align: center;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+
+nav a{
+    text-align:center;
+    color:#000;
+    text-decoration:none;
+    padding: 35px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around; 
+}
+
+nav, footer {
+    flex-direction: column;
+}
+nav a {
+    display: block;
+    padding: 15px;
+}
+nav a:hover,.book:hover,.join:hover {
+    background-color:#C9ADA7;
+    color:#FFF;
+}
+
+#book-img {
+    width:100%;
+    height: 100%;
+    margin-bottom: 0px;
+}
+#book {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+
+#book-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#book-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+#book-msg {
+    text-align: center;
+    color: white;
+}
+
+h1{
+    
+}
+
+h4{
+    text-align: center;
+    color: white;
+    text-emphasis-color: #6fc8db;
+    text-emphasis-style: open;
+    margin-bottom: 70px;
+        
+
+}
+
+.mark2{
+    background-color: #3986db;
+    color: white;
+}
+
+.mark1{
+    background-color: #6fc8db;
+    font-weight: 900;
+}
+
+#book-msg h1,#book-msg div,.button-box,main section {
+    text-align: center;
+}
+#nav {
+    display: flex;
+    flex-direction: row;
+    
+    padding: 20px;
+    
+}
+
+header a{
+    background-color: white;
+    color: crimson;
+    text-decoration: none;
+    text-align: center;
+    padding: 
+}
+header a{
+    background-color: white;
+    color: crimson;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 100px;
+    margin-left: 40px;
+    border-radius: 40px;
+}
+
+.home-title {
+    color:#C9ADA7;
+    font-family: Kalam;
+    font-size: 2em;
+    margin-top: 10px;
+}
+body {
+    background-color: #FFF;
+    font-family: Poppins, Helvetica, sans-serif;
+    
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width: 900px) {
+    #book, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #book {
+        margin-top: 0;
+    }
+    #book-msg {
+        margin-top: 0;
+    }
+    #book-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapid
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+h7 {
+    display: block;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 20px;
+    font-family: Fraunces;
+    font-weight: 900;
+    font-size: 30px;
+    color: #6d173d;
+  }
+  
+  
+  footer {
+    background-color: #F72585;
+    max-width: 1600px;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  footer a {
+    text-decoration: none;
+    font-family: Barlow;
+    color: #6d173d;
+    opacity: 0.5;
+  }
+  
+  footer a:hover {
+    color: white;
+    opacity: none;
+  }
+  
+  .fa-brands {
+    padding: 0px 12px;
+    color: #6d173d;
+  
+  }
+  
+  .fa-brands:hover {
+    color: white;
+  }
